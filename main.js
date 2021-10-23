@@ -3,7 +3,7 @@ const linksSocialMedia = {
     github: "macielvini",
     youtube: "rocketseat",
     facebook: "rocketseat",
-    instagram: "rocketseat_oficial",
+    instagram: "_vinimaciel",
     twitter: "rocketseat"
 }
 
@@ -35,3 +35,4 @@ function getGitHubProfileInfos() {
 }
 
 getGitHubProfileInfos()
+//#SemLimites

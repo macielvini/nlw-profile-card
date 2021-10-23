@@ -18,9 +18,15 @@ body {
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+  vertical-align: top;
+}
+
+#desktop-card {
+  display: none;
 }
 
 .container {
@@ -80,4 +86,35 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+@media (min-width: 600px) {
+  main {
+    background: url(images/desktop-background.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+  }
+
+  #desktop-card {
+    display: flex;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .content {
+    position: absolute;
+  }
+
+  li {
+    transition: all 0.2s;
+  }
+
+  li:hover {
+    transform: translateY(-0.25em);
+  }
 }
